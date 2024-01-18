@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Uddesh's Store</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="./commentsection.png">Add Comment</a></li>
+                <li><a href="https://www.amazon.in/" target="_blank">Amazon.in</a></li>
+                <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+                
+                <li><a href="logout.html" >Logout</a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>Welcome to your dashboard. You can access various features here.</p>
+            <main>
+                <section class="product">
+                    <img src="T-shirt 1.jpg" alt="T-Shirt 1">
+                    <h2>T-Shirt Name 1</h2>
+                    <p>High-quality cotton T-shirt in various sizes and colors.</p>
+                    <p>Price: 19,000.99</p>
+                    <button>Add to cart</button>
+                    <button id="add-cart1"> Buy</button>
+                </section>
+        
+                <section class="product">
+                    <img src="T-shirt2.jpg" alt="T-Shirt 2">
+                    <h2>T-Shirt Name 2</h2>
+                    <p>Comfortable and stylish T-shirt for any occasion.</p>
+                    <p>Price: 240.99</p>
+                    <button>Add to cart</button>
+                    <button id="add-cart2"> Buy </button>
+                </section>
+        
+                <!-- Add more product sections as needed -->
+            </main>
+        </main>
+        <button class="open-button" onclick="openForm()">Chat</button>
+
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+        
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+        
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+        <hr>
+    </div>
+    <footer>
+        <p>&copy; 2023 T-Shirt Store</p>
+    </footer>
+    <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            
+    </script>
+</body>
+</html>
